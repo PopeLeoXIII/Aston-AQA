@@ -3,8 +3,7 @@ import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
-        StreamHelper helper = new StreamHelper();
-
+        // Задание 1
         // создадим лист случайных интов от 1 до 10
         List<Integer> intList = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
@@ -14,6 +13,7 @@ public class Main {
         // выведем лист и количество четных элементов в нем
         System.out.printf("В коллекции %s %d четных элементов\n\n", intList, StreamHelper.evenCount(intList));
 
+        // Задание 2
 
         // чтобы получить коллекцию, состоящую из строк: «Highload», «High», «Load», «Highload»
         // создадим лист из 10 элементов, которые выбираются случайно из строк в задании
@@ -24,7 +24,7 @@ public class Main {
         }
 
         System.out.println("В коллекции " + stringList);
-        String high = words[1]; // "High"
+        String high = words[1]; // строка "High"
         System.out.printf("Элемент %s встречается %d раз\n", high, StreamHelper.wordCount(stringList, high));
         System.out.printf("Первый элемент: %s \n", StreamHelper.firstElement(stringList));
         System.out.printf("Последний элемент: %s \n", StreamHelper.lastElement(stringList));
@@ -33,6 +33,7 @@ public class Main {
         System.out.println("Для пустой коллекции первый элемент: " + StreamHelper.firstElement(new ArrayList<>()));
         System.out.println("Для пустой коллекции последний элемент: " + StreamHelper.lastElement(new ArrayList<>()));
 
+        // Задание 3
 
         // Чтобы получить коллекцию, содержащую элементы "f10", "a15", "f2", "f4", "f5", “b54”, “a16” создадим сет из 5
         // элементов, выбранных случайно (т.к. сет содержит только уникальные элементы не будем брать 10, чтобы коллекции отличались)
@@ -50,6 +51,7 @@ public class Main {
         System.out.println("\nКоллекцию " + stringSet);
         System.out.println("Отсортируем в алфавитном порядке " + StreamHelper.sort(stringSet));
 
+        // Задание 4
         // создадим коллекцию студентов из задания
         Collection<Student> students = Arrays.asList(
                 new Student("Дмитрий", 17, Gender.MAN),
@@ -62,6 +64,7 @@ public class Main {
         System.out.println("Список студентов подпадающих под воинский призыв\n"
                 + StreamHelper.studentConscription(students));
 
+        // Задание 5
         // создадим список куда будем считывать логины
         List<String> logins = new ArrayList<>();
 
