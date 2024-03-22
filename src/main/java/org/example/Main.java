@@ -1,3 +1,5 @@
+package org.example;
+
 public class Main {
     public static void main(String[] args) {
         // создадим различные коробки
@@ -33,6 +35,7 @@ public class Main {
         // orangeBox.moveTo(appleBox);
 
         System.out.println("Вес всех апельсинов в одной коробке: " + orangeBoxSameWeight.getWeight());
+        System.out.println("Вес пустой коробки: " + orangeBox.getWeight());
 
     }
 }

@@ -1,3 +1,5 @@
+package org.example;
+
 import java.util.ArrayList;
 
 // Box - класс коробки в которую можно складывать фрукты
@@ -27,6 +29,7 @@ public class Box <T extends Fruit> {
 
     // moveTo - метод перемещающий фрукты из текущей коробки в box
     public void moveTo(Box<T> box) {
-        elements.forEach(box::put);
+        elements.forEach(box::put); // добавляем фрукты в другую коробку
+        elements.clear(); // убираем все из своей коробки
     }
 }

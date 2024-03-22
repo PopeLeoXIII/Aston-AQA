@@ -1,3 +1,5 @@
+package org.example;
+
 // Orange - класс апельсинов
 public class Orange extends Fruit {
     // getWeight - метод для получения веса одного апельсина

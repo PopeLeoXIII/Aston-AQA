@@ -1,3 +1,5 @@
+package org.example;
+
 // Apple - класс яблок
 public class Apple extends Fruit {
     // getWeight - метод для получения веса одного яблока
